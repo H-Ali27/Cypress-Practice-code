@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-03T19:18:55.716Z",
+    "end": "2023-08-03T19:19:10.995Z",
+    "duration": 15279,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ec657a7-972b-4a2d-b48e-b2072b8233ff",
+      "title": "",
+      "fullFile": "cypress\\Integration\\examples\\test1.spec.js",
+      "file": "cypress\\Integration\\examples\\test1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2a8b555f-f973-4924-8fbf-1d254a91c9af",
+          "title": "10 Pearls Course Certification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login to the website",
+              "fullTitle": "10 Pearls Course Certification should login to the website",
+              "timedOut": null,
+              "duration": 15050,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('example').then(function (data) {\n  this.data = data;\n  cy.login(this.data.username, this.data.password);\n  cy.contains(\"Invalid credentials\").should(\"not.exist\");\n  cy.url().should(\"eq\", 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\n  // cy.logout()\n});",
+              "err": {},
+              "uuid": "9d421c85-f1ae-497f-9a4e-504d1670d773",
+              "parentUUID": "2a8b555f-f973-4924-8fbf-1d254a91c9af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d421c85-f1ae-497f-9a4e-504d1670d773"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15050,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
